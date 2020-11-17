@@ -1,4 +1,196 @@
-.container{
-    display: flex;
-    border-bottom: 2px solid black;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
+/* Header Styles */
+
+header{
+  border-bottom: 2px solid black;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+    .header-container{
+        display: flex;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .left-nav-items{
+          width: 50%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+            #icon{
+
+            }
+            #nav-input{
+              height: 25px;
+              width: 200px;
+            }
+            #nav-list{
+              list-style-type: none;
+            } 
+              .nav-list-item{
+                display: inline-block;
+                border: 1px solid black;
+                margin-left: 20px;
+              }
+        
+        .right-nav-items{
+          display: flex;
+          
+        }
+            #icon-bell{
+              margin-right: 15px;
+            }
+            .dropdown{
+              margin-right: 10px;
+            }
+
+/* First Section Styles */
+#first-section{
+  width: 100%;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgb(209, 202, 193);
+}
+
+    #main-first-container{
+      display: flex;
+      width: 35%;
+      margin-right: auto;
+      margin-left: auto;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+        .first-container-items{
+          display: flex;
+          cursor: pointer;
+        }
+            .first-container-items .fal {
+              margin-right: 8px;
+            }
+
+/* Second Section */
+#second-section{
+  width: 100%;
+}
+
+    #main-second-container{
+      display: flex;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+    }
+
+        #main-second-container-one{
+          width: 25%;
+        }
+          #profile-img{
+            height: 150px;
+            border-radius: 50%;
+            
+          }
+            #profile-img img{
+              width: 100%;
+              border-radius: 50%;
+              margin-bottom: 14px;
+            }
+              #profile-label{
+                font-size: 25px;
+                margin-bottom: 6px;
+              }
+              #profile-button{
+                width: 100%;
+                margin-top: 10px;
+                padding: 8px;
+                border-radius: 5px;
+                border:1px solid rgb(209, 202, 193);
+              }
+        #main-second-container-two{
+          width: 70%;
+          padding-top: 15px;
+          display: flex;
+          flex-direction: column;
+        }
+          .inner-items{
+            border-bottom: 1px solid rgb(209, 202, 193);
+            padding-bottom: 20px;
+            padding-top: 20px;
+          }
+            #repo-input{
+              width: 55%;
+              border: 1px solid rgb(209, 202, 193);
+              height: 25px;
+              border-radius: 3px;
+              margin-right: 30px;
+            }
+            #repo-search-button{
+              width: 20%;
+              border: 1px solid rgb(209, 202, 193);
+              height: 25px;
+              border-radius: 3px;
+            }
+          
+          .inner-container{
+            display: flex;
+            justify-content: space-between;
+          }
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(44, 3, 83, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #070657;
+      color: white;
+ }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #1e201e;
+  }
