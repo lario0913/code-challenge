@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lario0913/code-challenge#readme",
   "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
     "node-fetch": "^2.6.1"
   }
 }
